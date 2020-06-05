@@ -18,7 +18,7 @@ public class HelloWorldServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String postedString = req.getParameter("postedString");
 
-        if (postedString.length() == 0) {
+        if (postedString.trim().length() == 0) {
             postedString = DEFAULT_STRING;
         }
 
