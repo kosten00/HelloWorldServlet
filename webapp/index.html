@@ -1,5 +1,21 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelloWorldServlet</title>
+</head>
 <body>
-    <h1>index.html</h1>
+
+<a href="/helloWorld">Click here for GET method execution with default message.</a>
+
+<form action="/helloWorld" method="post">
+    <p>Please input text below and press send button to execute POST method. In case input is empty, you will get default hello-world message on the next page.</p>
+    <p><input type="text" name="postedString"></p>
+    <p><input type="submit" value="Send"></p>
+</form>
+
 </body>
 </html>
